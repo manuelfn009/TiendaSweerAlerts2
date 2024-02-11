@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-lg navbar-primary bg-primary p-3 position-fixed w-100 top-0 mb-4 z-1">
+    <div class="container-fluid">
+        <a class="navbar-brand text-light" href="/tienda">Tienda</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+<h1 class="text-center" style="margin-top: 7%">Tienda</h1>
+<div class="container d-flex justify-content-center flex-wrap mt-6 top-25 h-100">
+    <div class="card m-3 w-25 p-3">
+        <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$"
+            class="card-img-top" width="200" height="200">
+        <div class="card-body">
+            <h5 class="card-title" id="title" #title>PS5</h5>
+            <small class="text-muted">Disponible</small>
+            <p id="price" #price>$549.99</p>
+            <p class="card-text"> La consola PS5® hace posibles nuevas formas de juego que jamás habías imaginado. </p>
+        </div>
+        <button class="btn btn-primary" (click)="alerta(title.innerText, price.innerText)">Comprar</button>
+    </div>
+    <div class="card m-3 w-25 p-3">
+        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4FkjX?ver=c092"
+            class="card-img-top" width="200" height="200">
+        <div class="card-body">
+            <h5 class="card-title" id="title" #title2>Xbox Series S</h5>
+            <small class="text-muted">Disponible</small>
+            <p id="price" #price2>$350</p>
+            <p class="card-text"> Xbox Series S es la consola de sobremesa de Microsoft y la mejor consola de
+                videojuegos. </p>
+        </div>
+        <button class="btn btn-primary" (click)="alerta(title2.innerText, price2.innerText)">Comprar</button>
+
+    </div>
+    <div class="card m-3 w-25 p-3">
+        <img src="https://static.vecteezy.com/system/resources/previews/024/724/528/original/virtual-reality-or-vr-headset-isolated-on-transparent-background-vr-glasses-for-360-environment-games-or-simulation-training-generative-ai-free-png.png"
+            class="card-img-top" width="200" height="200">
+        <div class="card-body">
+            <h5 class="card-title" id="title" #title3>VR Headset</h5>
+            <small class="text-muted">Disponible</small>
+            <p id="price" #price3>$345</p>
+            <p class="card-text"> La VR headset es la mejor forma de conectarse con el mundo. </p>
+        </div>
+        <button class="btn btn-primary" (click)="alerta(title3.innerText, price3.innerText)">Comprar</button>
+
+    </div>
+    <div class="card m-3 w-25 p-3">
+        <img src="https://assets.stickpng.com/images/5eb4156d7834b2000433266d.png" class="card-img-top" width="200"
+            height="200">
+        <div class="card-body">
+            <h5 class="card-title" id="title" #title4>Nintendo Switch</h5>
+            <small class="text-muted" #price4>Disponible</small>
+            <p id="price">$299</p>
+            <p class="card-text"> La consola Nintendo Switch es la mejor consola de videojuegos para disfrutar de una
+                calidad de juego optima. </p>
+        </div>
+        <button class="btn btn-primary" (click)="alerta(title4.innerText, price4.innerText)">Comprar</button>
+
+    </div>
+    <div class="card m-3 w-25 p-3">
+        <img src="https://live.staticflickr.com/65535/53248997995_5b8fa1120f_h.jpg" class="card-img-top" width="200"
+            height="200">
+        <div class="card-body">
+            <h5 class="card-title" id="title" #title1>PS5 slim</h5>
+            <small class="text-muted">Disponible</small>
+            <p id="price" #price1>$550</p>
+            <p class="card-text"> La consola PS5 slim es la mejora de la ps5 digital, se han corregido varios errores
+            </p>
+        </div>
+        <button type="submit" class="btn btn-primary"
+            (click)="alerta(title1.innerText, price1.innerText)">Comprar</button>
+    </div>
+</div>
